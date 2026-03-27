@@ -1,12 +1,12 @@
 [config]
 model = "qwen/qwen-max"  # 根据你的实际开通模型修改，如 qwen/qwen-turbo, qwen/qwen-plus 等
-git_provider = "gitlab"
+git_provider = "github"
 
 [pr_reviewer]
 enable_review_labels_effort = true
 enable_auto_approval = true
 
-[gitlab]
+[github_app]
 pr_commands = [
     "/describe --pr_description.publish_description_as_comment=true",
     "/improve",
